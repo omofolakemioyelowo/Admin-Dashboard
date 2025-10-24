@@ -1,22 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>EarlyTechJunior College Exam Result Dashboard</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>ErryMophe College Exam Result Dashboard</title>
+  </head>
+  <body>
     <div class="dashboard">
-        <aside>
-        <div class="school-brand">
-            <img src="" alt="school logo">
-            <h3>EarlyTech Junior College</h3>
+      <div class="sidebar">
+        <div class="sidebar-heading">
+          <h3 class="brand">
+            <span class="material-symbols-outlined"> auto_stories </span>
+            <span>ErryMophe College</span>
+          </h3>
+          <span class="material-symbols-outlined"> menu </span>
         </div>
-        <div class="menu-block">
-
+        <div class="side-menu">
+          <ul class="primary-links">
+            <li>
+              <a href=""
+                ><span class="material-symbols-outlined"> dashboard </span>
+                Dashboard</a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><span class="material-symbols-outlined"> menu_book </span>
+                Subject</a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><span class="material-symbols-outlined"> receipt_long </span>
+                Results</a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><span class="material-symbols-outlined">
+                  event_available
+                </span>
+                Attendance</a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><span class="material-symbols-outlined"> analytics </span
+                >Performance</a
+              ><span class="material-symbols-outlined"> arrow_drop_down </span>
+            </li>
+          </ul>
+          <ul class="secondary-links">
+            <li>
+              <a href=""
+                ><span class="material-symbols-outlined"> person </span
+                >Profile</a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><span class="material-symbols-outlined"> settings </span
+                >Setting</a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><span class="material-symbols-outlined"> logout </span
+                >Logout</a
+              >
+            </li>
+          </ul>
         </div>
-    </aside>
+      </div>
+      <div class="main-content">
+        <div class="header">
+          <div>
+            <h3>Live Result</h3>
+          </div>
+          <div class="right-header">
+            <span class="material-symbols-outlined"> notifications </span>
+            mail_outline
+            <div class="profile">
+              <img src="" alt="profile picture" />
+              <p>Adelowo Eri-ifeoluwa</p>
+            </div>
+            <span class="material-symbols-outlined"> arrow_drop_down </span>
+          </div>
+        </div>
+        <div class="content-middle">
+          <div class="input-group">
+            <label for="student-id">Student ID</label>
+            <input type="text" id="student-id" name="student-id" />
+          </div>
+          <div class="input-group">
+            <label for="term">Select Term</label>
+            <input type="text" id="term" name="term" /><span
+              class="material-symbols-outlined"
+            >
+              arrow_drop_down
+            </span>
+          </div>
+          <button>View Result</button>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
