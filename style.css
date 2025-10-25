@@ -1,7 +1,73 @@
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+  --primary: #b4c6a6;
+  --Bg: #fff;
+  --text-primary: #2e2e2e;
+  --text-secondary: #6b7280;
+  --border: #e5e7eb;
+  --hover: #a3b899;
+}
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+}
+.dashboard {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--Bg);
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+}
+.sidebar {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  background-color: var(--primary);
+  color: var(--text-primary);
+  padding: 2rem;
+}
+.sidebar-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  height: 60px;
+  padding: 0 1.5rem;
+}
+.sidebar-heading h3 {
+  font-size: 1.5rem;
+}
+.brand {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: #4a5c45;
+}
+.head {
+  font-size: 36px;
+}
+.side-menu a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: var(--text-primary);
+  font-size: 1.6rem;
+}
+.side-menu li {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+.primary-links span {
+  font-size: 24px;
 }
