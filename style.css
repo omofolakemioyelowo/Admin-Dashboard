@@ -1,6 +1,6 @@
 :root {
   --primary: #111827;
-  --Bg: #fff;
+  --Bg: #f3f4f6;
   --text-primary: #2e2e2e;
   --text-secondary: #fff;
   --border: #e5e7eb;
@@ -16,6 +16,7 @@
 body {
   background-color: var(--Bg);
   position: relative;
+  display: flex;
 }
 #menu {
   background-color: var(--primary);
@@ -72,4 +73,102 @@ body {
 }
 #menu .item li:hover a {
   color: #f3f4f6;
+}
+#interface {
+  width: calc(100% - 300px);
+}
+#interface .nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #fff;
+  border-bottom: 3px solid #594ef7;
+}
+#interface .nav .search {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 10px 14px;
+  border: 1px solid #d7dbe6;
+  border-radius: 4px;
+}
+#interface .nav .search i {
+  margin-right: 14px;
+}
+#interface .nav .search input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+#interface .nav .right {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#interface .nav .right i {
+  margin-right: 40px;
+  font-size: 18px;
+  font-weight: 400;
+}
+#interface .nav .right img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.i-name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #444953;
+  padding: 30px 30px 0 30px;
+}
+.values {
+  padding: 30px 30px 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.values .value-box {
+  background-color: #fff;
+  flex: 1 1 230px;
+  height: 120px;
+  padding: 20px 24px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.values .value-box i {
+  font-size: 26px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+  color: #ffffff;
+}
+.values .value-box:nth-child(1) i {
+  background-color: #7b74ec;
+}
+.values .value-box:nth-child(2) i {
+  background-color: #5c89f0;
+}
+.values .value-box:nth-child(3) i {
+  background-color: #e45d99;
+}
+.values .value-box:nth-child(4) i {
+  background-color: #74daec;
+}
+.values .value-box h3 {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+.values .value-box span {
+  font-size: 18px;
+  color: #828997;
 }
